@@ -1,0 +1,465 @@
+body {
+    background: #0F0F0F;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: url("assets/bg.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid white;
+    background-color: #090909;
+}
+
+.tg-button {
+    margin-left: 30px;
+    margin-right: 10px;
+    border-radius: 500000px;
+    border: none;
+    outline: none;
+    background: white;
+    color: #0d0d0d;
+    width: 200px;
+    font-weight: 900;
+    height: 50px;
+    font-size: 14px;
+}
+
+.tg-button i {
+    margin-right: 10px;
+    font-size: 17px;
+}
+
+.title-start {
+    width: 700px;
+    margin-left: 50px;
+}
+
+.contact-button,
+.contact-button-white,
+.contact-button-footer {
+    border-radius: 500000px;
+    border: none;
+    outline: none;
+    font-weight: 900;
+    height: 50px;
+    font-size: 14px;
+}
+
+.contact-button {
+    margin: 20px 50px 0 50px;
+    background: white;
+    color: #0d0d0d;
+    width: 300px;
+}
+
+.contact-button-white {
+    margin-left: 30px;
+    color: white;
+    background: #0d0d0d;
+    width: 300px;
+}
+
+.contact-button-footer {
+    background: white;
+    color: #0d0d0d;
+    width: 300px;
+    margin: 10px;
+}
+
+.contact-button i,
+.contact-button-white i,
+.contact-button-footer i {
+    margin-right: 10px;
+    font-size: 17px;
+}
+
+.big {
+    width: 625px;
+    margin-top: 10px;
+}
+
+.frow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.info {
+    width: 500px;
+    margin-left: 30px;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+}
+
+.links h3 {
+    margin: 0 10px;
+}
+
+.wrapper {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    color: white;
+}
+
+.avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 650000px;
+    margin: 15px 25px 0 0;
+}
+
+.card-user {
+    display: flex;
+    margin-left: 50px;
+    flex-direction: row;
+}
+
+.card-user .col {
+    margin-top: 5px;
+}
+
+.col h4 {
+    margin-left: 0;
+}
+
+.links h3{
+    margin-top: 15px;
+}
+
+.rounded-banner {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.quote {
+    width: fit-content;
+    height: fit-content;
+    border-radius: 200000px;
+    background: #0d0d0d;
+    color: white;
+    text-align: center;
+    border: 2px solid white;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    top: -10%;
+    left: -5%;
+}
+
+.search-input {
+    width: 90%;
+    margin-left: 30px;
+    height: 40px;
+    border-radius: 50000px;
+    background: #0d0d0d;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.search-input i {
+    margin-top: 10px;
+}
+
+.search {
+    background: transparent;
+    outline: none;
+    color: white;
+    width: 100%;
+    font-weight: 900;
+    border: none;
+}
+
+.search:focus,
+.search:hover {
+    outline: none;
+    border: none;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.uimage {
+    margin-right: 100px;
+}
+
+.col h5 {
+    margin-top: -10px;
+}
+
+.card {
+    width: 250px;
+    height: fit-content;
+    border-radius: 20px;
+    background: #0d0d0d;
+    color: white;
+    padding: 10px;
+    margin: 20px;
+}
+
+.card h3,
+.card h4,
+.card h5 {
+    margin-left: 10px;
+}
+
+.products-row img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.products-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.footer {
+    text-align: center;
+    color: white;
+    margin-bottom: 100px;
+}
+
+.card-white {
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 20px;
+    background-color: white;
+    border-radius: 30px;
+    margin-top: 50px;
+}
+
+h4 {
+    margin-left: 30px;
+}
+
+/* Улучшенная мобильная адаптация */
+@media (max-width: 1200px) {
+    .title-start,
+    .big,
+    .info {
+        width: 100%;
+        margin: 20px 0;
+        padding: 0 20px;
+    }
+
+    .uimage {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .uimage {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tg-button {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .title-start,
+    .big,
+    .info,
+    .search-input {
+        width: 90%;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .contact-button,
+    .contact-button-white,
+    .contact-button-footer {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-user {flex-direction: column;
+        align-items: center;
+        margin: 20px auto;
+    }
+
+    .uimage {
+        margin: 20px 0;
+    }
+
+    .rounded-banner {
+        width: 90%;
+        height: auto;
+    }
+
+    .quote {
+        position: static;
+        margin: 20px auto;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .products-row {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .card-white {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    h4 {
+        margin-left: 10px;
+    }
+
+    .header {
+        padding: 15px; /* Уменьшаем отступы для маленьких экранов */
+    }
+
+    .tg-button,
+    .contact-button,
+    .contact-button-white,
+    .contact-button-footer {
+        font-size: 12px; /* Уменьшаем размер шрифта кнопок */
+        height: 40px; /* Уменьшаем высоту кнопок */
+    }
+
+    .avatar {
+        width: 60px; /* Уменьшаем размер аватара */
+        height: 60px;
+        margin-right: 15px;
+    }
+
+    .search-input {
+        padding: 0 10px; /* Уменьшаем отступы в поле поиска */
+    }
+
+    .search-input i {
+        font-size: 16px; /* Уменьшаем размер иконки поиска */
+    }
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Скрыто за пределами экрана */
+    width: 250px;
+    height: 100%;
+    background: #0d0d0d;
+    color: white;
+    transition: left 0.3s ease;
+    z-index: 1000; /* Чтобы меню было поверх всего остального */
+    padding-top: 60px; /* Отступ сверху, чтобы не перекрывать header */
+}
+
+.side-menu.active {
+    left: 0; /* Показываем меню */
+}
+
+.side-menu-content {
+    padding: 20px;
+}
+
+.side-menu-content h3 {
+    margin-bottom: 20px;
+    cursor: pointer; /* Добавляем курсор для интерактивности */
+}
+
+/* Стили для кнопки меню */
+.menu-toggle {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Скрываем на больших экранах */
+}
+
+/* Дополнительные улучшения для очень маленьких экранов */
+@media (max-width: 480px) {
+    .title-start h1,
+    .info h2 {
+        font-size: 1.5em; /* Уменьшаем размер заголовков */
+    }
+
+    .links {
+        display: none; /* Скрываем ссылки в header */
+    }
+
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu-toggle {
+        display: block; /* Показываем кнопку меню */
+        width: 48px;
+        height: 48px;
+    }
+
+    .card, .card-white{
+        text-align: center;
+    }
+
+    .frow {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-user{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .col h4,
+    .card h3,
+    .card h4,
+    .card h5 {
+        font-size: 1em; /* Уменьшаем размер заголовков карточек */
+    }
+}

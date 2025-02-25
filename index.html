@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOSHIKI LOGOS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/logo.png">
+    <link rel="stylesheet" href="assets/fontawesome-free-6.6.0-web/css/all.min.css">
+</head>
+<body>
+    <center>
+        <div class="header">
+            <h3>YOSHIKI LOGOS</h3>
+            <div class="links">
+                <h3>Главная</h3>
+                <h3>Обо мне</h3>
+                <h3>Работы</h3>
+                <button class="tg-button" onclick="window.open('https://t.me/smowqq')"><i class="fab fa-telegram"></i> Я в тгшке</button>
+            </div>
+            <button class="menu-toggle"><i class="fas fa-bars" id="dd"></i></button>
+        </div>
+    </center>
+
+    <div class="side-menu">
+        <div class="side-menu-content">
+            <h3>Главная</h3>
+            <h3>Обо мне</h3>
+            <h3>Работы</h3>
+            <h3 onclick="window.open('https://t.me/smowqq')">Я в тгшке</h3>
+        </div>
+    </div>
+    <div class="wrapper">
+        <h3 class="title-start">Занимаюсь созданием логотипов, аватарок и дизайнов для любых нужд. На этом сайте можно посмотреть все мои работы!</h3>
+        <div class="card-user">
+            <img src="assets/Frame 31.png" class="avatar">
+            <div class="col">
+                <h4>Йошики Петрикор</h4>
+                <h5>Дизайнер логотипов и аватарок</h5>
+            </div>
+        </div>
+        <button onclick="window.open('https://t.me/smowqq')" class="contact-button"><i class="fab fa-telegram"></i> Я в тгшке</button>
+    </div>
+    <div class="card-white">
+        <br>
+        <br>
+        <br>
+        <h4>Немножко обо мне</h4>
+        <br>
+        <div class="row">
+            <div class="col">
+                <h5 class="info">Моё имя Настя, и я дизайнер интересных логотипов и многого чего другого! занимаюсь таким около 3 месяцев, — но опыт уже в этом есть</h5>
+                <button class="contact-button-white" onclick="window.open('https://t.me/smowqq')"><i class="fab fa-telegram"></i> Я в тгшке</button>
+            </div>
+            <div class="col uimage">
+                <img src="assets/banner.jpg" class="rounded-banner">
+                <div class="quote"><h3>Дают - бери, не дают - отбери!</h3></div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="card-white">
+        <br>
+        <br>
+        <br>
+        <h4>Мои работы</h4>
+        <h5 class="info">Здесь вы можете увидеть мои работы, которые
+            я сделала за все это время</h5>
+        <div class="search-input">
+            <input type="text" id="input" placeholder="Найти одну из моих работ по названию" class="search">
+            <i class="fa fa-search"></i>
+        </div>
+        <div class="products-row" id="products-row">
+
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="footer">
+        <h3>Понравились работы? Захотели что-то заказать? Нужна помощь? Пишите мне, отвечу на все вопросы!</h3>
+        <div class="frow">
+            <button class="contact-button-footer" onclick="window.open('https://t.me/smowqq')"><i class="fab fa-telegram"></i> Я в тгшке</button>
+            <button class="contact-button-footer" onclick="window.open('https://www.instagram.com/petrikorioshiki')"><i class="fab fa-instagram"></i> Я в инсте</button>
+        </div>
+        <button onclick="window.open('tiktok.com/@y0rhika')" class="contact-button big"><i class="fab fa-tiktok"></i> Я в тиктоке</button>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.side-menu').classList.toggle('active');
+        });
+
+        // Добавляем обработчик клика на документ
+        document.addEventListener('click', function(event) {
+            const sideMenu = document.querySelector('.side-menu');
+            const menuToggle = document.querySelector('.menu-toggle');
+
+            // Проверяем, открыто ли меню и был ли клик вне меню и кнопки меню
+            if (sideMenu.classList.contains('active') && !sideMenu.contains(event.target) && event.target !== menuToggle) {
+                sideMenu.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
